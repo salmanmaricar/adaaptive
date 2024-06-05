@@ -18,4 +18,8 @@ describe('Page', () => {
     it('should test for an event date', () => { 
         expect(screen.queryByText("13 Jun 2024")).toBeTruthy()
     })
+
+    it('should test for an event photo', () => { 
+        expect(screen.getByRole('img')).toBeTruthy()
+    })
 })
