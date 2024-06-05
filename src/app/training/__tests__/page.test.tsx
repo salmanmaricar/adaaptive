@@ -11,7 +11,11 @@ describe('Page', () => {
         expect(screen.queryByText("Training")).toBeTruthy()
     })
 
-    it('should test for an event title', () => {
+    it('should test for an event title', () => { 
         expect(screen.queryByText("Using Systems Thinking")).toBeTruthy()
+    })
+
+    it('should test for an event date', () => { 
+        expect(screen.queryByText("13 Jun 2024")).toBeTruthy()
     })
 })
